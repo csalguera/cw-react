@@ -1,0 +1,44 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 200px;
+  padding: 16px;
+  border: solid 1px black;
+}
+
+.value {
+  min-width: fit-content;
+  width: inherit;
+  text-align: center;
+  background-color: black;
+  color: white;
+  overflow: hidden;
+}
+
+.form * {
+  margin: 8px 0;
+}
+
+.input-els-container {
+  width: inherit;
+  display: flex;
+  flex-direction: column;
+}
+
+.input-els-container input {
+  text-align: center;
+  border-radius: 100px;
+}
+
+.button-els-container {
+  width: inherit;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.button-els-container button {
+  width: 50px;
+}
