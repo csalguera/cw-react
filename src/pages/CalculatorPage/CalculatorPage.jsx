@@ -1,14 +1,14 @@
 // npm packages
 import { useState } from "react";
-import { CodeBlock, obsidian } from "react-code-blocks";
 
 // components
+import Calculator from "../../components/Calculator/Calculator";
 import CalculatorCodeBlock from "../../components/CalculatorCodeBlock/CalculatorCodeBlock";
 
 // styles
-import styles from './Calculator.module.css'
+import styles from './CalculatorPage.module.css'
 
-const Calculator = () => {
+const CalculatorPage = () => {
   const [numA, setNumA] = useState(0)
   const [numB, setNumB] = useState(0)
   const [value, setValue] = useState(0)
@@ -59,29 +59,13 @@ const Calculator = () => {
     <>
       <main className="page-container">
         <h1>Calculator</h1>
-        <div className={styles.container}>
-          <h3 className={styles.value}>{value}</h3>
-          <form className={styles.form}>
-            <div className={styles['input-els-container']}>
-              <input name="numA" type="number" value={numA} onChange={handleChange} />
-              <input name="numB" type="number" value={numB} onChange={handleChange} />
-            </div>
-            <div className={styles['button-els-container']}>
-              <button onClick={handleClick}>
-                +
-              </button>
-              <button onClick={handleClick}>
-                -
-              </button>
-              <button onClick={handleClick}>
-                x
-              </button>
-              <button onClick={handleClick}>
-                ÷
-              </button>
-            </div>
-          </form>
-        </div>
+        <Calculator
+          value={value}
+          numA={numA}
+          numB={numB}
+          handleChange={handleChange}
+          handleClick={handleClick}
+        />
         <article className={styles.article}>
           <h2>Function Explanations</h2>
           <p>
@@ -121,4 +105,4 @@ const Calculator = () => {
   )
 }
 
-export default Calculator
+export default CalculatorPage

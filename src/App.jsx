@@ -3,7 +3,7 @@ import { Route, Routes } from 'react-router-dom';
 
 // page components
 import Landing from './pages/Landing/Landing';
-import Calculator from './pages/Calculator/Calculator';
+import CalculatorPage from './pages/CalculatorPage/CalculatorPage';
 
 // components
 import Nav from './components/Nav/Nav';
@@ -22,7 +22,7 @@ function App() {
         />
         <Route
           path='/calculator'
-          element={<Calculator />}
+          element={<CalculatorPage />}
         />
       </Routes>
     </>

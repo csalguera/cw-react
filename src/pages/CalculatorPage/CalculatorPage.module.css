@@ -1,0 +1,19 @@
+.article {
+  width: 500px;
+  margin-top: 8px;
+  border-top: solid 1px black;
+}
+
+.article h3 {
+  border-top: solid 1px black;
+  padding-top: 16px;
+}
+
+.article h2, h3 {
+  text-align: center;
+}
+
+.article p {
+  line-height: 2rem;
+  text-indent: 2rem;
+}
