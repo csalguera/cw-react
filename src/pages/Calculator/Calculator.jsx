@@ -1,5 +1,6 @@
 // npm packages
 import { useState } from "react";
+import { CodeBlock, obsidian } from "react-code-blocks";
 
 // components
 import CalculatorCodeBlock from "../../components/CalculatorCodeBlock/CalculatorCodeBlock";
@@ -83,6 +84,9 @@ const Calculator = () => {
         </div>
         <article className={styles.article}>
           <h2>Function Explanations</h2>
+          <p>
+            The follwing functions were written in React using state to make the calculator above function. For reference, <b><i>setValue</i></b> can be interpreted as <b><i>return</i></b> if written in plain JavaScript.
+          </p>
           <h3>Add</h3>
           <CalculatorCodeBlock
             operation={add}

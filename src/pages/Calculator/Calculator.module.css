@@ -9,6 +9,7 @@
   border-radius: 30px;
   box-shadow: 10px 10px 5px black;
   background-color: rgb(176, 176, 176);
+  margin-bottom: 16px;
 }
 
 .value {
@@ -49,6 +50,13 @@
 
 .article {
   width: 500px;
+  margin-top: 8px;
+  border-top: solid 1px black;
+}
+
+.article h3 {
+  border-top: solid 1px black;
+  padding-top: 16px;
 }
 
 .article h2, h3 {
