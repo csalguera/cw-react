@@ -1,6 +1,6 @@
 // npm packages
 import { useState } from "react";
-import { CodeBlock, obsidian } from "react-code-blocks";
+import { CodeBlock, CopyBlock, obsidian } from "react-code-blocks";
 
 // styles
 import styles from './Calculator.module.css'
@@ -82,23 +82,28 @@ const Calculator = () => {
         <article className={styles.article}>
           <h2>Function Explanations</h2>
           <h3>Add</h3>
+          <CopyBlock
+            text={add}
+            theme={obsidian}
+          />
           <CodeBlock
             text={add}
             theme={obsidian}
           />
           <p>
-            The add function takes in two parameters: a and b <br />
-            In order to prevent concatenation, both values are parsed into integers with the parseInt method <br />
-            Finally, the state of value is set to the sum of arguments a and b.
+            The add function takes in two parameters: a and b. In order to prevent concatenation, both values are parsed into integers with the parseInt method. Finally, the state of value is set to the sum of arguments a and b.
           </p>
           <h3>Subtract</h3>
+          <CopyBlock
+          text={subtract}
+          theme={obsidian}
+          />
           <CodeBlock
           text={subtract}
           theme={obsidian}
           />
           <p>
-            The subtract function takes in two parameters: a and b <br />
-            No concatenation occurs, therefore the value can be set directly to the difference between the first value and the second value 
+            The subtract function takes in two parameters: a and b. No concatenation occurs, therefore the value can be set directly to the difference between the first value and the second value.
           </p>
         </article>
       </main>

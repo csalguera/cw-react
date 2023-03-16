@@ -52,3 +52,8 @@
 .article h2, h3 {
   text-align: center;
 }
+
+.article p {
+  line-height: 2rem;
+  text-indent: 2rem;
+}
