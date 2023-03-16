@@ -91,6 +91,15 @@ const Calculator = () => {
             In order to prevent concatenation, both values are parsed into integers with the parseInt method <br />
             Finally, the state of value is set to the sum of arguments a and b.
           </p>
+          <h3>Subtract</h3>
+          <CodeBlock
+          text={subtract}
+          theme={obsidian}
+          />
+          <p>
+            The subtract function takes in two parameters: a and b <br />
+            No concatenation occurs, therefore the value can be set directly to the difference between the first value and the second value 
+          </p>
         </article>
       </main>
     </>
