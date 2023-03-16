@@ -97,6 +97,13 @@ const Calculator = () => {
           <p>
             The subtract function takes in two parameters: a and b. No concatenation occurs, therefore the value can be set directly to the difference between the first value and the second value.
           </p>
+          <h3>Multiply</h3>
+          <CalculatorCodeBlock
+            operation={multiply}
+          />
+          <p>
+            The multiply function takes in two parameters: a and b. Similar to the subtract function, no concatenation occurs, thus the value can be set directly to the multiplication of both values.
+          </p>
         </article>
       </main>
     </>
