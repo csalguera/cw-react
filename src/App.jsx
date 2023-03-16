@@ -16,12 +16,14 @@ function App() {
     <>
       <Nav />
       <Routes>
-        <Route path='/' element={<Landing />}>
-          Home
-        </Route>
-        <Route path='/calculator' element={<Calculator />}>
-          Multiply
-        </Route>
+        <Route
+          path='/'
+          element={<Landing />}
+        />
+        <Route
+          path='/calculator'
+          element={<Calculator />}
+        />
       </Routes>
     </>
   )
