@@ -99,14 +99,21 @@ const Calculator = () => {
             operation={subtract}
           />
           <p>
-            The subtract function takes in two parameters: a and b. No concatenation occurs, therefore the value can be set directly to the difference between the first value and the second value.
+            The subtract function takes in two parameters: a and b. No concatenation occurs, therefore the total value can be set directly to the difference between the first value and the second value.
           </p>
           <h3>Multiply</h3>
           <CalculatorCodeBlock
             operation={multiply}
           />
           <p>
-            The multiply function takes in two parameters: a and b. Similar to the subtract function, no concatenation occurs, thus the value can be set directly to the multiplication of both values.
+            The multiply function takes in two parameters: a and b. Similar to the subtract function, no concatenation occurs, thus the total value can be set directly to the multiplication of both values.
+          </p>
+          <h3>Divide</h3>
+          <CalculatorCodeBlock
+            operation={divide}
+          />
+          <p>
+            The divide function takes in two parameters: a and b. Just like the previous two functions, it does not concatenate, the total value can be directly set to the division of the first value by the second value.
           </p>
         </article>
       </main>
